@@ -1,5 +1,6 @@
 Öncelikle yüklenmesi gereken bir program var(veritabanını görüntülemek için): https://sqlitebrowser.org/dl/
-Yalnızca windowsta çalışır. os.system('cls') lerden dolayı.
+Yalnızca windowsta çalışır. os.system('cls') lerden dolayı
+dosyaların yollarını ayarlamanız gerekir örn. anlamlar.txt dosyasının yolunu, sql dosyasının yolunu yazmanız gerekir
 
 Seçenek 1 ; Oyun:
 
