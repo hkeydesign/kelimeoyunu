@@ -1,0 +1,17 @@
+Öncelikle yüklenmesi gereken bir program var(veritabanını görüntülemek için): https://sqlitebrowser.org/dl/
+Yalnızca windowsta çalışır. os.system('cls') lerden dolayı.
+
+Seçenek 1 ; Oyun:
+
+Veritabanına girmek için isminizi alır
+internette bulduğum anlamlar.txt dosyasından rastgele bir satır çeker ve split metodu ile kelime-anlam olmak üzere ikiye ayırır.
+Her kelime tahmini kelimenin harf sayısının 100 katı puan ile başlar.da 
+Eğer anlam bize bir şey çağrıştırıyorsa tahminde bulundabiliriz.Eğer çağrıştırmıyorsa harf alabiliriz. Her harf aldığımızda o elden kazanacağımız puan sayısı 100 azalır.
+Her oyunda 6 el vardır.
+6 el sonunda nickinizi ve puanınızı veritabanına işler.
+
+
+Seçenek 1 ; Skor Sorgusu:
+
+Veritabanına kayıtlı olan oyuncuların skorlarını gösterir. 
+Eğer oyuncuların puanları 0 ise gösterilmez
