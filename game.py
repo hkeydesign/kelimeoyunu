@@ -28,7 +28,7 @@ while True:
         name = input('Skor kaydetmem için önce isim alayım lütfen : ')
         for i in range(6):
             while True:
-                dosya = open("C:\\Users\\acmlk\\OneDrive\\Masaüstü\\ses\\anlamlar.txt","r",encoding="utf-8")
+                dosya = open("anlamlar.txt","r",encoding="utf-8")
                 for _ in range(random.randint(1,8174)):
                     line = dosya.readline()
                     kelime,anlam= map(
@@ -65,14 +65,14 @@ while True:
                     continue
             
         print(f'Önceki El Toplam:{toplampuan}kazandın ')
-        db = sql.connect('C:\\Users\\acmlk\\OneDrive\\Masaüstü\\ses\\skor.sqlite')
+        db = sql.connect('skor.sqlite')
         imlec = db.cursor()
         imlec.execute("CREATE TABLE IF NOT EXISTS skor (İsim,Puan)")
         imlec.execute(f"INSERT INTO skor VALUES('{name}','{toplampuan}')")
         db.commit()
         db.close()
     if sorgu=='2':
-        db = sql.connect('C:\\Users\\acmlk\\OneDrive\\Masaüstü\\ses\\skor.sqlite')
+        db = sql.connect('skor.sqlite')
         imlec = db.cursor()
         imlec.execute("SELECT İsim,Puan FROM skor WHERE Puan != '0'")
         skorlar = imlec.fetchall()
