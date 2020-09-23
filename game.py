@@ -2,8 +2,6 @@ import random
 import sqlite3 as sql
 import os
 
-os.system('cls')
-
 def harfal(kelime,soylenen_harfler,harfler):
     
     while True:
